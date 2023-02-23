@@ -7,10 +7,10 @@ switch ($request) {
         include __DIR__ . "/views/user.php";
         break;
 
-    case (preg_match_all('/php/user/[0-9]', $request) ? true : false):
+    case (preg_match("/\/php\/user\/[0-9]{1,}/", $request) ? true : false):
         include __DIR__ . "/views/user_detail.php";
         break;
 
     default:
-        echo "ini diawal";
+        echo "ini home";
 }

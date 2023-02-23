@@ -31,12 +31,14 @@ $data = allUser();
                 $i = 1;
                 foreach ($data["data"] as $item) {
             ?>
+                    <link href="http://localhost/php/user/<?php $item["id"] ?>">
                     <tr>
                         <th scope="row"><?= $i++ ?></th>
                         <td><?= $item["nama"]; ?></td>
                         <td><?= $item["passwd"]; ?></td>
                         <td><?= $item["createdAt"]; ?></td>
                     </tr>
+                    </link>
             <?php
                 }
             }
