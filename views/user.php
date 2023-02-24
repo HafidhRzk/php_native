@@ -31,7 +31,7 @@ $data = allUser();
                 $i = 1;
                 foreach ($data["data"] as $item) {
             ?>
-                    <a href="http://localhost/php/user/<?php $item["id"] ?>">
+                    <a href="http://localhost/php/user/<?= $item["id"] ?>">
                         <tr>
                             <th scope="row"><?= $i++ ?></th>
                             <td><?= $item["nama"]; ?></td>
